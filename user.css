@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    gap: 10px;
+}
+
+h1{
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.user-name{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.button_out{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-logout{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: rgb(13, 105, 211);
+    border: 1px solid rgb(13, 105, 211);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-logout:hover{
+    background-color: rgb(13, 105, 211);
+    color: white;
+}
+
+.welcome-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-title{
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-text{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card_block {
+    display: flex;
+    padding: 20px 10px;
+    width: 300px;
+    gap: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.card__element {
+    font-size: 14px;
+}
+
+.edit-btn {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    background: rgb(13, 110, 253);
+}
+
+.edit-btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(13, 110, 253);
+    border: 1px solid rgb(13, 110, 253);
+}
+
+.avatar__img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 25px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #666;
+}
+
+.close-modal:hover {
+    color: #000;
+}
+
+/* Стили для списка долгов */
+.debts-list {
+    margin: 20px 0;
+}
+
+.debt-item {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid #dc3545;
+}
+
+.debt-item.status-not-passed {
+    border-left-color: #dc3545;
+}
+
+.debt-item.status-in-process {
+    border-left-color: #ffc107;
+}
+
+.debt-item.status-fixed {
+    border-left-color: #28a745;
+}
+
+.debt-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.debt-header h3 {
+    margin: 0;
+    color: #333;
+}
+
+.debt-type {
+    background: #6c757d;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.debt-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.debt-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.debt-info .label {
+    font-weight: 600;
+    color: #555;
+    min-width: 100px;
+}
+
+.debt-info .value {
+    color: #333;
+}
+
+.status-badge {
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge-danger {
+    background: #dc3545;
+    color: white;
+}
+
+.badge-warning {
+    background: #ffc107;
+    color: #212529;
+}
+
+.badge-success {
+    background: #28a745;
+    color: white;
+}
+
+.no-debts {
+    text-align: center;
+    padding: 40px;
+    color: #28a745;
+    font-size: 18px;
+}
+
+.modal-footer {
+    text-align: right;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.btn-close {
+    background: rgb(0, 147, 0); 
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-close:hover {
+    background: #5a6268;
+}
+
+.debt-count {
+    background: #dc3545;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.edit-btn {
+    position: relative;
+}

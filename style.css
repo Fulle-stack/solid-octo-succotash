@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: Roboto;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(248,249,250);
+    display: flex;
+    width: 100%;
+}
+
+.separator {
+    display: flex;
+}
+
+.left_block {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    background-color: rgb(33, 37, 41);
+    max-width: 240px;
+    width: 100%;
+}
+
+.left_block_one {
+    display: flex;
+    padding: 32px 32px 16px 32px;
+
+}
+
+.criteria {
+    display: flex;
+    gap: 8px;
+    padding: 16px 32px 32px 32px;
+    flex-direction: column;
+    color: white;
+    padding-left: 32px;
+}
+
+.dashboard {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.customers {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgb(52, 58, 64);
+    padding: 19px 12px 12px 12px;
+    border-radius: 8px;
+}
+
+.criteria_head {
+    display: flex;
+    font-size: 14px;
+    color: rgb(73, 80, 87);
+    margin: 0px 106px 16px 20px;
+}
+
+.messages {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.main_content {
+    width: 100%;
+    position: relative;
+}
+
+.main_content::before {
+    content: url(/admin-img/Arrow\Left.svg);
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 20px;
+    line-height: 100%;
+    top: 12px;
+    left: -20px;
+    position: absolute;
+}
+
+.main_nav-item {
+    display: flex;
+    gap: 8px;
+    padding: 12px 32px 0px 0px;
+}
+
+.main_top {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.pin_head {
+    display: flex;
+    background-color: white;
+    border: 2px solid rgb(233, 236, 239);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.bell_pin {
+    display: flex;
+    position: relative;
+}
+
+.point_bell {
+    display: flex;
+    position: absolute;
+    top: 9px;
+    right: 16.9%;
+}
+
+
+.man_pin {
+    display: flex;
+    border: 2px solid rgb(233, 236, 239);
+    border-radius: 8px;
+    gap: 8px;
+    align-items: center;
+    padding: 8px;
+}
+
+.pin_chevron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-title {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0px 0px 32px;
+}
+
+.category-title_head {
+    display: flex;
+    font-size: 46px;
+    font-weight: 400;
+}
+
+.category-title_text {
+    display: flex;
+    gap: 8px;
+}
+
+.category-1 {
+    display: flex;
+    color: rgb(108, 117, 125);
+    font-size: 14px;
+}
+
+.black_text {
+    display: flex;
+    color: black;
+    font-size: 14px;
+}
+
+.gap_category {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    padding-right: 32px;
+}
+
+.search-menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 32px 16px 0px;
+
+}
+
+.button-search {
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(0, 87, 252);
+    padding: 15px 32px 15px 38px;
+    border-radius: 8px;
+
+}
+
+.new-customer-btn {
+    display: flex;
+    align-items: center;
+    color: rgb(0, 87, 252);
+    text-decoration: none;
+}
+
+.search-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.search-pin {
+    position: absolute;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+}
+
+.search-input {
+    border-radius: 8px;
+    height: 40px;
+    width: 100%;
+    padding: 8px 0px 8px 32px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 320px;
+}
+
+.table_main {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 32px;
+}
+
+th {
+    text-align: left;
+    border-left: 1px solid rgb(233, 236, 239);
+}
+
+td {
+    padding: 16px 29px 16px 24px;
+    text-align: left;
+    color: black;
+    border: 1px solid rgb(233, 236, 239);
+}
+
+th {
+    padding: 16px 24px;
+}
+
+.header-cell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.status-cell {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icons {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.center_simval {
+    text-align: center;
+}
+
+tr {
+    color: rgb(108, 117, 125);
+}
+
+.end_board {
+    display: flex;
+    gap: 8px;
+}
+
+.gray_arrow {
+    display: flex;
+    background-color: rgb(233, 236, 239);
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+}
+
+.while_block-arrow {
+    display: flex;
+    gap: 8px;
+    padding-bottom: 65px;
+}
+
+.while_block-blue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 2px solid rgb(0, 87, 252);
+    color: rgb(0, 87, 252);
+    width: 40px;
+    height: 40px;
+}
+
+.while_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(206, 212, 218);
+}
+
+.while_block_arrow-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(206, 212, 218);
+    border-radius: 8px;
+}
+
+.gap_space-end {
+    display: flex;
+    gap: 32px;
+}
+
+.items-per-pag {
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.select-box {
+    padding: 8px 40px 8px 12px;
+    border: 2px solid #ced4da;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+    height: 40px;
+    width: 137px;
+    color: rgb(173, 181, 189);
+    outline: none;
+}
+
+.page_end {
+    display: flex;
+    align-items: center;
+    height: 37px;
+    font-size: 14px;
+}
+
+/* .background_gray{
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.table_elemen_color{
+    background-color: white;
+    padding: 16px;
+}
+
+.table_main tr:nth-child(odd) {
+    background-color: rgb(255, 255, 255);
+} */
+
+.table_main tr:nth-child(even) {
+    background-color: white;
+}
+
+.exit_out{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}

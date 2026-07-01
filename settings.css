@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    padding: 120px 64px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.success {
+    color: #008000;
+    background: #d4edda;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.sign-up_block {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.sing-up {
+    display: flex;
+    font-size: 48px;
+    font-weight: 600;
+    color: rgb(8, 131, 231);
+    justify-content: center;
+}
+
+.sing-up-text {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.gap_space {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 32px;
+}
+
+.input_block {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.input_field {
+    display: flex;
+    outline: none;
+    padding: 15px 15px;
+    min-width: 300px;
+    border: 1px solid rgb(8, 131, 231);
+    ;
+}
+
+.justify_input {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-signup {
+    display: flex;
+    width: 485px;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    background-color: white;
+    border: 1px solid rgb(8, 131, 231);
+    text-decoration: none;
+    color: rgb(8, 131, 231);
+    font-size: 16px;
+}
+
+.btn-signup:hover {
+    background-color: rgb(8, 131, 231);
+    ;
+    color: white;
+}
+
+.line {
+    display: flex;
+    border-bottom: 1px solid rgb(8, 131, 231);
+    width: 485px;
+}
+
+.separation {
+    display: flex;
+    justify-content: center;
+}
+
+.end_block {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.log_in {
+    color: rgb(8, 131, 231);
+}
+
+.img_end {
+    display: flex;
+}
+
+.footer {
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    color: rgb(8, 131, 231);
+}
+
+.back-link{
+    color: rgb(8, 131, 231);
+}
